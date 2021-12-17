@@ -4,7 +4,7 @@
   "parameters": {
     "teamcityVersion": {
       "type": "string",
-      "defaultValue": "2020.1",
+      "defaultValue": "2021.2",
       "allowedValues": [
         "2021.2",
         "2021.1",
