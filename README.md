@@ -37,7 +37,7 @@ Allows specifying username to login to a virtual machine where TeamCity is runni
 
 #### SSH Key Data
 
-Allows specifying a [publish ssh key](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed) for the user used to connect to virtial machine with TeamCity.
+Allows specifying a [publish ssh key](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed) for the user used to connect to virtual machine with TeamCity.
 
 #### Database Password
 
@@ -45,7 +45,7 @@ Allows specifying password for the MySQL database.
 
 ## Configuration
 
-After deployment you will be able to connect to the `teamcity` virtual machine via SSH. In Flatcar Container Linux TeamCity works as the following systemd service:
+After deployment, you will be able to connect to the `teamcity` virtual machine via SSH. In Flatcar Container Linux TeamCity works as the following systemd service:
 
 * `teamcity-server.service` - launches TeamCity server.
 * `teamcity-agent.service` - launches TeamCity agent. 
@@ -64,8 +64,8 @@ To diagnose problems you could use the following commands:
 The template installs the following Azure integrations in TeamCity:
 
 * [Azure Cloud Agents](https://plugins.jetbrains.com/plugin/9260-azure-resource-manager-cloud-support) - allows to scale the pool of TeamCity build agents by leveraging Azure virtual machines.
-* [Azure Artifacts Storage](https://plugins.jetbrains.com/plugin/9617-azure-artifact-storage) - allows to store build artifacts in Azure Cloud Storage Blobs.
-* [Azure Active Directory](https://plugins.jetbrains.com/plugin/9083-azure-active-directory) - allows to use Azure AD authentication in TeamCity.
+* [Azure Artifacts Storage](https://plugins.jetbrains.com/plugin/9617-azure-artifact-storage) - allows storing build artifacts in Azure Cloud Storage Blobs.
+* [Azure Active Directory](https://plugins.jetbrains.com/plugin/9083-azure-active-directory) - allows using Azure AD authentication in TeamCity.
 
 ## TeamCity Update
 
